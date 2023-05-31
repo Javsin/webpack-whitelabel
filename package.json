@@ -1,0 +1,20 @@
+{
+  "name": "webpack-landingpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch" : "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Progammer Belanda",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^8.0.3",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.0"
+  }
+}

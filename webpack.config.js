@@ -12,7 +12,7 @@ function getEntries(pattern) {
   }
   
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     target: ["web", "es5"],
     entry: getEntries('src/*.js'),
     optimization: {

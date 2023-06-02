@@ -1,4 +1,4 @@
-const data = require('./globaldata.js')
+//const data = require('./globaldata.js')
 function get_terlaris (){
     // let x = data.config_terlaris()
     // return x

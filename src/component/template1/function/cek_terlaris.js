@@ -8,7 +8,7 @@ const find_terlaris = (inp,funct) => {
             terlaris.push(data)
           }
         })
-     })
+      })
     }else{
       let filter_terlaris = global.data_terlaris.map(data => {
         data.hlr.split(",").map(findhlr => {

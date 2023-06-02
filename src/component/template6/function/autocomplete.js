@@ -37,8 +37,8 @@ window.setup_auto_complete = (e) => {
   if ((value_length > 3 && value_length <= 4) || value_length !== 0) {
     const hlr = cek_hlr(e.value);
     global.selectedData = hlr[0];
-    document.querySelector("#app").classList.add("d-none");
-    document.querySelector("#loading").classList.remove("d-none");
+    // document.querySelector("#app").classList.add("d-none");
+    // document.querySelector("#loading").classList.remove("d-none");
 
     if (hlr.length != 0) {
       hlr.map((data) => {
@@ -49,19 +49,16 @@ window.setup_auto_complete = (e) => {
       });
 
       setTimeout(() => {
-        document.querySelector("#loading").classList.add("d-none");
-        document.querySelector("#app").classList.remove("d-none");
+        // document.querySelector("#loading").classList.add("d-none");
+        // document.querySelector("#app").classList.remove("d-none");
         global.show_bottom_nav = true;
         global.footer.classList.remove("d-none");
-      }, 1500);
+      }, 100);
 
       const dataTab = global.rawData.menu;
       const dataButton = global.selectedData.tagging;
       inputNomor.removeAttribute("onkeyup");
       inputNomor.setAttribute("onkeyup", "onChangeNomor(event)");
-
-      global.mainInput.classList.remove("min-margin-top-min-3");
-      global.mainInput.classList.add("min-margin-top-min-4");
       headTitle.classList.add("d-none");
       global.layoutNominal.innerHTML = "";
 

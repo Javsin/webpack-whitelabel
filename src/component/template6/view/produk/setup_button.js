@@ -11,7 +11,7 @@ const setup_button = (data) => {
 
   data.map((item) => {
     button += `
-        <span class="badge border-radius-5 font-medium btn-outline-dark-blue p-2 fw-normal nav-button me-2" onclick="setup_active_button(this, '${item.title_tag}')">${toCapitalizeFirstLetter(item.title_tag)}</span>
+        <span class="badge border-radius-5 font-medium text-dark border-gray btn-filter-kategori p-2 fw-normal nav-button me-2" onclick="setup_active_button(this, '${item.title_tag}')">${toCapitalizeFirstLetter(item.title_tag)}</span>
     `;
   });
 

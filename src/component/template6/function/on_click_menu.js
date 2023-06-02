@@ -6,7 +6,6 @@ const { setup_navigation_filter } = require("../view/produk/setup_navigation_fil
 // const { setup_active_tab } = require("../view/produk/setup_active_tab");
 
 window.onClickMenu = (value) => {
-  Android.log("onClickMenu" + value);
   const headTitle = document.querySelector("#head-title");
   const inputNomor = document.querySelector("#input-nomor");
 
@@ -27,18 +26,16 @@ window.onClickMenu = (value) => {
 
   const labelNomorOperator = document.querySelector("#label-nomor-operator");
 
-  document.querySelector("#app").classList.add("d-none");
-  document.querySelector("#loading").classList.remove("d-none");
+  // document.querySelector("#app").classList.add("d-none");
+  // document.querySelector("#loading").classList.remove("d-none");
 
   setTimeout(() => {
     inputNomor.removeAttribute("onkeyup");
     inputNomor.setAttribute("onkeyup", "onChangeNomor(event)");
 
-    document.querySelector("#loading").classList.add("d-none");
-    document.querySelector("#app").classList.remove("d-none");
+    // document.querySelector("#loading").classList.add("d-none");
+    // document.querySelector("#app").classList.remove("d-none");
 
-    global.mainInput.classList.remove("min-margin-top-min-3");
-    global.mainInput.classList.add("min-margin-top-min-4");
     headTitle.classList.add("d-none");
 
     global.layoutNominal.innerHTML = "";
@@ -50,7 +47,7 @@ window.onClickMenu = (value) => {
     setup_active_tab(document.querySelector(".nav-link.active"), "all");
     global.footer.classList.remove("d-none");
     // checkIsPinned(value);
-  }, 1500);
+  }, 100);
 };
 
 module.exports = { onClickMenu };

@@ -46,7 +46,7 @@ layout_main_content.setup_main_content();
 layout_default_navigation.setup_default_navigation();
 layout_footer.setup_footer();
 layout_menu.setup_menu();
-funct_pin.get_pin();
+//funct_pin.get_pin();
 
 onHiddenFilter();
 set_heightscreen();

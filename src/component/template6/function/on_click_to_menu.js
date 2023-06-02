@@ -7,9 +7,6 @@ const { setup_default_navigation } = require("../view/setup_default_navigation")
 window.onClickToMenu = () => {
   resetFilter();
   !global.footer.classList.contains("d-none") && (global.footer.classList.add("d-none"), (global.layoutNominal.parentElement.style.height = "65vh"));
-
-  global.mainInput.classList.add("min-margin-top-min-3");
-  global.mainInput.classList.remove("min-margin-top-min-4");
   setup_main_content();
   setup_default_navigation();
   setup_menu(global.allData);

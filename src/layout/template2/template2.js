@@ -1,11 +1,8 @@
 const html = () => {
     return (
         `<section class="background-default vh-100 overflow-scroll" id="body-content">
-            <div class="header">
-                <img src="bg3.png" alt="" class="img-fluid">
-            </div>
             <div class="mb-10">
-                <div id="main-input" class="autocompete-nomor shadow-lg mx-3 position-relative border-radius-10 bg-white min-margin-top-min">
+                <div id="main-input" class="autocompete-nomor shadow-lg mx-3 position-relative border-radius-10 bg-white mt-3">
                     <div class="row px-2 py-2">
                         <div class="col-12">
                             <p class="text-secondary font-large" id="head-title"></p>

@@ -46,7 +46,7 @@ const setup_selected_produk = (data) => {
                   <div class="row">
                       <div class="col-8">
                           <span class="background-${tag.includes("Promo") ? "green" : "gray"} tagging border-radius-bottom-8 font-small px-3 py-1 text-white ms-2-5">${tag}</span>
-                          <span class="background-orange tagging border-radius-bottom-8 font-small px-3 py-1 text-white ms-2-5 ${terjual_string === "" ? "d-none" : ""}">${terjual_string}</span>
+                          <span class="background-orange terjual border-radius-bottom-8 font-small px-3 py-1 text-white ms-2-5 ${terjual_string === "" ? "d-none" : ""}">${terjual_string}</span>
                       </div>
                       <div class="col-4 d-flex justify-content-end">
                         <span class="bg-danger gangguan border-radius-bottom-8 font-small px-2 py-1 text-white me-2-5 ${gangguan? ` ` : ` d-none`}" data-gangguan="${gangguan}">Gangguan</span>

@@ -2,21 +2,19 @@ const html = () => {
     return (
         `
         <section class="background-default vh-100" id="body-content">
-            <div class="header">
-                <img src="bg4.png" alt="" class="img-fluid">
-                </div>
-                <div id="main-input"
-                class="autocompete-nomor shadow-lg mx-3 border-radius-10 bg-white min-margin-top-min-oneform position-relative">
-                <div class="row px-2 py-2">
-                    <div class="col-12">
-                    <p class="text-secondary font-normal" id="head-title"></p>
-                    </div>
-                    <div class="col-12 mt-2 dynamic-form" id="dynamic-form">
+            <div class="pt-3">
+                <div id="main-input"class="autocompete-nomor shadow-lg mx-3 border-radius-10 bg-white">
+                    <div class="row px-2 py-2">
+                        <div class="col-12">
+                            <p class="text-secondary font-normal" id="head-title"></p>
+                        </div>
+                        <div class="col-12 mt-2 dynamic-form" id="dynamic-form">
 
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="produk mx-3 mt-2 h-75 pb-7" onscroll="scroll_produk(this)" id="produk">
+            <div class="produk mx-3 mt-2 h-75 pb-7" id="produk">
             <div class="row gx-2" id="outter-produk">
                 <!-- js -->
             </div>

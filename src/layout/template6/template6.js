@@ -129,15 +129,11 @@ const html = () => {
               <!-- From JS -->
             </div>
           </div>
-          <!-- Header -->
-          <header>
-            <img src="bg4.png" alt="" class="img-fluid" />
-          </header>
           <!-- Main Content -->
           <section id="main-content" class="background-default vh-100">
             <!-- Card Input -->
-            <div id="card">
-              <div id="main-input" class="position-relative autocompete-nomor shadow-sm mx-3 border-radius-10 bg-white position-fixed-top min-margin-top-min-3">
+            <div id="card" class="pt-3">
+              <div id="main-input" class="position-relative autocompete-nomor shadow-sm mx-3 border-radius-10 bg-white position-fixed-top">
                 <!-- From JS -->
               </div>
               <!-- onscroll="scroll_produk(this)" -->

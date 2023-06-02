@@ -68,24 +68,22 @@ const html = () => {
                     </div>
                 </div>
                 </div>
-                <!-- Header -->
-                <header>
-                <img src="bg3.png" alt="" class="img-fluid" />
-                </header> 
             
                 <!-- Main Content -->
                 <section id="mainContent" class="background-default vh-100 d-block">
-                <div id="main-input" class="position-relative autocompete-nomor shadow-sm mx-3 border-radius-10 bg-white position-fixed-top min-margin-top-min">
-                    <div class="row px-2 py-2">
-                    <div class="col-12">
-                        <p class="text-secondary font-normal" id="head-title"></p>
+                    <div class="pt-3">
+                        <div id="main-input" class="position-relative autocompete-nomor shadow-sm mx-3 border-radius-10 bg-white position-fixed-top">
+                            <div class="row px-2 py-2">
+                            <div class="col-12">
+                                <p class="text-secondary font-normal" id="head-title"></p>
+                            </div>
+                            <div class="col-12 mt-2 dynamic-form" id="dynamic-form">
+                                
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 mt-2 dynamic-form" id="dynamic-form">
-                        
-                    </div>
-                    </div>
-                </div>
-                <div class="row mt-3 mx-3 gx-3 mh-50 pb-6 overflow-auto" id="layout-nominal" onscroll="scroll_produk(this)"></div>
+                <div class="row mt-3 mx-3 gx-3 mh-50 pb-6 overflow-auto" id="layout-nominal"></div>
                 </section>
                 
                 <section class="section-footer" id="footer">

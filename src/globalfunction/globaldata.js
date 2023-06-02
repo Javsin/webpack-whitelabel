@@ -1265,7 +1265,7 @@ const config_pdam = () => {
             "isHlr": false,
             "isKontak": false,
             "isScan": false,
-            "tipe": "numeric",
+            "tipe": "text",
             "title": "Nomor Hp"
         },
         "template": 5

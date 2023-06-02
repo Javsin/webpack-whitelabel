@@ -1,19 +1,16 @@
 const html = () => {
     return (
         `<section class="background-default vh-100" id="body-content">
-            <div class="header">
-                <img src="bg3.png" alt="" class="img-fluid">
-            </div>
-            <div class="">
-                <div id="main-input" class="position-relative shadow-lg mx-3 border-radius-10 bg-white min-margin-top-min">
-                <div class="row px-2 py-2">
-                    <div class="col-12">
-                    <p class="text-secondary font-large" id="head-title"></p>
+            <div class="pt-3">
+                <div id="main-input" class="position-relative shadow-lg mx-3 border-radius-10 bg-white">
+                    <div class="row px-2 py-2">
+                        <div class="col-12">
+                        <p class="text-secondary font-large" id="head-title"></p>
+                        </div>
+                        <div class="col-12 mt-2 dynamic-form" id="dynamic-form">
+                            
+                        </div>
                     </div>
-                    <div class="col-12 mt-2 dynamic-form" id="dynamic-form">
-                        
-                    </div>
-                </div>
                 </div>
             </div>
             <div class="offcanvas offcanvas-bottom border-radius-top-20" tabindex="-1" id="offcanvasRincianPembelian" aria-labelledby="offcanvasWithBothOptionsLabel">

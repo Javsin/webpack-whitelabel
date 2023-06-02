@@ -6,7 +6,7 @@ const setup_default_navigation = () => {
 
   const navigation = `
   <div class="col-1 d-flex align-items-center">
-    <a href="com.app.murapay://home" class="text-decoration-none">
+    <a href="#" onclick="homeAndroid()" class="text-decoration-none">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 36 30.63">
         <g id="Group_1003" data-name="Group 1003" transform="translate(-77 -89)">
           <g id="Layer_x0020_1" transform="translate(77 89)">

@@ -40,4 +40,12 @@ window.set_operator = (operator,produk) => {
   }, 1500);
 }
 
+window.homeAndroid = () => {
+  try {
+    Android.closePage()
+  } catch (error) {
+    
+  }
+}
+
 module.exports = {set_kontak, kontak, scan, informasi_pin, set_operator}

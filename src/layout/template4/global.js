@@ -10,10 +10,12 @@ let storedData = {
     title : "",
     is_ppob : ''
 };
+let setting = ''
 
 module.exports = {
     data_produk,
     data_config,
     panchi,
     storedData,
+    setting
 }

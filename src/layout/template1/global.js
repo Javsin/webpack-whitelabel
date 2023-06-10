@@ -1,6 +1,7 @@
 let data_produk = []
 let data_config = []
 let data_terlaris = []
+let setting = ''
 let dynamic_form_1 = ''
 let dynamic_form_2 = ''
 let dynamic_form_3 = ''
@@ -26,7 +27,8 @@ module.exports = {
     dynamic,
     pembelian,
     panchi,
-    element_kontak
+    element_kontak,
+    setting,
 }
 
 

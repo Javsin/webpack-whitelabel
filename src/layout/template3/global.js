@@ -6,6 +6,7 @@ let panchi = ''
 let temp_produk = ''
 let offcanvas_produk = ''
 let isppob = ''
+let setting = ''
 
 module.exports = {
     data_produk,
@@ -16,4 +17,5 @@ module.exports = {
     offcanvas_produk,
     temp_valueproduk,
     isppob,
+    setting
 }

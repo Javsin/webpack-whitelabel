@@ -44,7 +44,7 @@ let config = [];
 
 let rawData = []; // Data from API
 let selectedData = []; // Selected Data Per Operator (ex: XL, Indosat, etc)
-
+let setting = ''
 let filteredData = []; // From Selected Data, filtered by kategori
 let filteredDataByTag = [];
 let filteredDataAll = [];
@@ -89,6 +89,7 @@ let timeout = null;
 module.exports = {
   config,
   rawData,
+  setting,
   selectedData,
   filteredData,
   filteredDataByTag,

@@ -1,5 +1,6 @@
 const produk = require("./globalfunction/get_produk");
 const config = require("./globalfunction/get_config");
+const settings = require('./globalfunction/config.js');
 const layout = require("./layout/template6/template6");
 
 document.querySelector("#main_el").innerHTML = layout.html();
@@ -41,12 +42,13 @@ const { resize, set_heightscreen } = require("./component/template6/function/on_
 
 global.rawData = produk.get_data();
 global.config = config.get_config();
+global.setting = settings.config();
 
 layout_main_content.setup_main_content();
 layout_default_navigation.setup_default_navigation();
 layout_footer.setup_footer();
 layout_menu.setup_menu();
-//funct_pin.get_pin();
+funct_pin.get_pin();
 
 onHiddenFilter();
 set_heightscreen();

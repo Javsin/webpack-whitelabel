@@ -1,15 +1,15 @@
 const global = require('../../../layout/template5/global.js')
 window.kontak = (e) => {
     try {
-      let set = Android.get_kontak()
+        let set = Android.get_kontak()
     } catch (error) {
-      
+
     }
 }
-  
+
 window.scan = (e) => {
     try {
-      let set = Android.get_kontak_scan()
+        let set = Android.get_kontak_scan()
     } catch (error) {
       
     }
@@ -29,17 +29,20 @@ window.set_kontak = (kontak) => {
 }
 
 window.pdam_from_history = (produk) => {
+    const el_harga = document.getElementById('total-bottom')
     setTimeout(() => {
         global.data_produk.map((item) => {
             item.detail.filter((item) => {
-              if(item.kode === produk){
-                let wilayah = document.getElementById('wilayah')
-                wilayah.value = item.produk
-                wilayah.setAttribute('data-produk',item.produk)
-                wilayah.setAttribute('data-harga',item.harga)
-                wilayah.setAttribute('data-kode',item.kode)
-                wilayah.setAttribute('data-exp',item.exp)
-              }
+                if(item.kode === produk){
+                    let wilayah = document.getElementById('wilayah')
+                    wilayah.value = item.produk
+                    wilayah.setAttribute('data-produk',item.produk)
+                    wilayah.setAttribute('data-harga',item.harga)
+                    wilayah.setAttribute('data-kode',item.kode)
+                    wilayah.setAttribute('data-exp',item.exp)
+                    const harga = item.harga.toString().replace('-','')
+                    el_harga.innerHTML = `(Rp ${harga})`
+                }
             })
         }) 
     }, 100);

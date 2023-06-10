@@ -1,4 +1,6 @@
+const global = require('./global.js')
 const html = () => {
+  const color = global.setting.color
   return (
     `<section class="background-default vh-100 overflow-scroll" id="body-content">
     <div class="mb-13">
@@ -17,7 +19,7 @@ const html = () => {
                   <button class="btn btn-small text-white bg-transparent p-0"
                     onclick="add_form(this)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                       <g id="Group_3658" data-name="Group 3658" transform="translate(-349 -598)">
-                        <circle id="Ellipse_193" data-name="Ellipse 193" cx="12" cy="12" r="12" transform="translate(349 598)" fill="#ed1941"/>
+                        <circle id="Ellipse_193" data-name="Ellipse 193" cx="12" cy="12" r="12" transform="translate(349 598)" fill="${color}"/>
                         <path id="Union_2" data-name="Union 2" d="M-8574.5,1437.5v-4h-4a1.5,1.5,0,0,1-1.5-1.5,1.5,1.5,0,0,1,1.5-1.5h4v-4a1.5,1.5,0,0,1,1.5-1.5,1.5,1.5,0,0,1,1.5,1.5v4h4a1.5,1.5,0,0,1,1.5,1.5,1.5,1.5,0,0,1-1.5,1.5h-4v4a1.5,1.5,0,0,1-1.5,1.5A1.5,1.5,0,0,1-8574.5,1437.5Z" transform="translate(8934 -822)" fill="#fff"/>
                       </g>
                     </svg></button>

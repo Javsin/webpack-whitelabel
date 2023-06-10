@@ -4,6 +4,7 @@ let dynamic_form_1 = ''
 let panchi = ''
 let temp_produk = ''
 let offcanvas_produk = ''
+let setting = ''
 
 module.exports = {
     data_produk,
@@ -12,4 +13,5 @@ module.exports = {
     panchi,
     temp_produk,
     offcanvas_produk,
+    setting
 }
